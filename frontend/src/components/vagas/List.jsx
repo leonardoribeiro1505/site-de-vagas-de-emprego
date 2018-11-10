@@ -3,7 +3,6 @@ import { List, Card } from 'antd';
 import axios from 'axios';
 import imageAvatar from '../../assets/images/mslogo.jpg'
 import { Link } from 'react-router-dom'
-import PageHeader from '../../template/pageHeader'
 
 const { Meta } = Card;
 
@@ -28,8 +27,7 @@ export default class VagasList extends React.Component {
         const listData = this.state.list
         return (
             <center>
-                <PageHeader name='Vagas disponíveis'/>
-                <br/>
+                <h1>Vagas Disponíveis</h1>
                 <br/>
                 <List
                     grid={{ gutter: 16, column: 3 }}

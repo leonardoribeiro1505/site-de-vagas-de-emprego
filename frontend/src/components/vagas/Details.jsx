@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card, Icon } from 'antd';
 import axios from 'axios';
-import PageHeader from '../../template/pageHeader'
 
 const baseUrl = `http://localhost:3002/oapi/vagas`
 export default class DetailsVaga extends React.Component {
@@ -24,7 +23,7 @@ export default class DetailsVaga extends React.Component {
     render() {        
         return (
             <center>
-                <PageHeader name='Detalhes da vaga'/>
+                <h1>Detalhes da vaga</h1>
                 <div style={{ marginLeft: 100, marginRight: 100 }}>
                 <br/>
                 <Card
