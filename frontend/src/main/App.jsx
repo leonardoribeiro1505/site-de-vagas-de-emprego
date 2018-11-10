@@ -21,7 +21,7 @@ export default class App extends React.Component {
                         <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', height: '100%' }}>
                             <Routes />
                     </Content>
-                    <Footer style={{ textAlign: 'center', bottom: 0, position: 'fixed', width: '100%', height: '10%' }}>
+                    <Footer style={{ textAlign: 'center', bottom: 0, position: 'fixed', width: '100%', lineHeight: '10px', height: '10%' }}>
                         <p>&copy; Copyrights <b>EquipeVagasDeEmprego.</b> Todos os direitos reservados</p>
                         <p>Desenvolvido na disciplina de Tecnologias para Internet II</p>
                     </Footer>
