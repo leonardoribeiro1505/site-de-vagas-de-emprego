@@ -1,6 +1,5 @@
 import React from 'react'
 import { Form, Input, Button, DatePicker, Select, InputNumber, Alert } from 'antd';
-import locale from 'antd/lib/date-picker/locale/pt_BR';
 import axios from 'axios';
 import PageHeader from '../../template/pageHeader'
 
@@ -149,8 +148,7 @@ class CadVagasForm extends React.Component {
           label="Início de Exibição"
         >
           {getFieldDecorator('inicioExibicao', rangeConfig)(
-            <DatePicker showTime format="DD-MM-YYYY" 
-            locale={locale}
+            <DatePicker showTime format="DD-MM-YYYY"
             style={{ width: 454 }}
             placeholder="Marque o dia que irá publicar" />
           )}
@@ -161,7 +159,6 @@ class CadVagasForm extends React.Component {
         >
           {getFieldDecorator('fimExibicao', rangeConfig)(
             <DatePicker showTime format="DD-MM-YYYY" 
-            locale={locale}
             style={{ width: 454 }}
             placeholder="Marque o dia do fim da publicação" />
           )}
